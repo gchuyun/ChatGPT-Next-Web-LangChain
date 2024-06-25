@@ -628,8 +628,9 @@ export function ChatActions(props: {
         />
 
         {config.pluginConfig.enable &&
-          /^gpt(?!.*03\d{2}$).*$/.test(currentModel) &&
-          currentModel != "gpt-4-vision-preview" && (
+          (!config.pluginConfig.enableOnlyGpt ||
+            (/^gpt(?!.*03\d{2}$).*$/.test(currentModel) && currentModel != "gpt-4-vision-preview")
+          ) && (
             <ChatAction
               onClick={switchUsePlugins}
               text={

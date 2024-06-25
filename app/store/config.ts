@@ -75,6 +75,7 @@ export const DEFAULT_CONFIG = {
 
   pluginConfig: {
     enable: true,
+    enableOnlyGpt: true,
     maxIterations: 10,
     returnIntermediateSteps: true,
   },

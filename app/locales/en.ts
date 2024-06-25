@@ -393,6 +393,10 @@ const en: LocaleType = {
         Title: "Enable Plugin",
         SubTitle: "Enable plugin invocation",
       },
+      EnableOnlyGpt: {
+        Title: "Only for GPT",
+        SubTitle: "Only enable plugin invocation for gpt models (gpt-4-vision-preview not support)",
+      },
       MaxIteration: {
         Title: "Max Iterations",
         SubTitle: "Max of plugin iterations",

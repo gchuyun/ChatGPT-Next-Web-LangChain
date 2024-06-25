@@ -387,6 +387,10 @@ const cn = {
         Title: "启用插件",
         SubTitle: "启用插件调用功能",
       },
+      EnableOnlyGpt: {
+        Title: "仅对GPT启用",
+        SubTitle: "仅对GPT模型启用插件调用功能 (gpt-4-vision-preview 除外)",
+      },
       MaxIteration: {
         Title: "最大迭代数",
         SubTitle: "插件调用最大迭代数",

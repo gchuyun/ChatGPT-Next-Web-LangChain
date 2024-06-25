@@ -24,6 +24,20 @@ export function PluginConfigList(props: {
         ></input>
       </ListItem>
       <ListItem
+        title={Locale.Settings.Plugin.EnableOnlyGpt.Title}
+        subTitle={Locale.Settings.Plugin.EnableOnlyGpt.SubTitle}
+      >
+        <input
+          type="checkbox"
+          checked={props.pluginConfig.enableOnlyGpt}
+          onChange={(e) =>
+            props.updateConfig(
+              (config) => (config.enableOnlyGpt = e.currentTarget.checked),
+            )
+          }
+        ></input>
+      </ListItem>
+      <ListItem
         title={Locale.Settings.Plugin.MaxIteration.Title}
         subTitle={Locale.Settings.Plugin.MaxIteration.SubTitle}
       >
